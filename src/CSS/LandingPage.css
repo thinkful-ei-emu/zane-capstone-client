@@ -1,0 +1,55 @@
+header{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:25vh;
+  margin-bottom: 5px;
+  border-bottom:2px solid black;
+}
+
+section{
+  border-bottom:2px solid black;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+.footersection{
+  height:20px;
+  border-bottom:none;
+}
+
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border:3px black solid;
+  width:90%;
+  height:90%;
+  border-radius: 13px;
+
+
+  
+}
+
+.sign-up-form label{
+  font-size:22px;
+
+  }
+
+
+.signup-section{
+  border-bottom: none;
+  height: 80vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.red{
+  color:red;
+  font-weight: bold;
+  font-size:18px;
+}
