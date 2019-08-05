@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '../Components/SignUp/NavBar'
-import SignUpForm from './SignUp/SignUpForm';
+import NavBar from './SignUpComponents/NavBar'
+import SignUpForm from './SignUpComponents/SignUpForm';
 import AuthApiService from '../services/auth-api-service'
 
 
@@ -11,15 +11,18 @@ static defaultProps={
 }
 
   state={error:null}
+ 
  handleSubmit=e=>{
 
   e.preventDefault();
 
-  const {user_name,password,user_email}=e.target;
+  const {user_name,password,user_email,first_name,last_name}=e.target;
 
   this.setState({error:null})
 
   AuthApiService.postUser({
+    first_name:first_name.value,
+    last_name:last_name.value,
     user_name:user_name.value,
     password:password.value,
     user_email:user_email.value
@@ -36,9 +39,13 @@ static defaultProps={
     this.setState({error:res.error})
   })
 
+
   console.log(user_name.value)
   console.log(password.value)
   console.log(user_email.value)
+  console.log(first_name.value)
+  console.log(last_name.value)
+  console.log(this.state.error)
 
 
 

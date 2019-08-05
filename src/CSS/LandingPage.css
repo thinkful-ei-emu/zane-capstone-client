@@ -6,6 +6,7 @@ header{
   height:25vh;
   margin-bottom: 5px;
   border-bottom:2px solid black;
+  
 }
 
 section{
@@ -52,4 +53,14 @@ section{
   color:red;
   font-weight: bold;
   font-size:18px;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+  border:3px solid black;
+
 }
