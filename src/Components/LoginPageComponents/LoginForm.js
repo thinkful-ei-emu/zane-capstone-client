@@ -6,9 +6,9 @@ export default function LoginForm(props){
   return(
 
     <section>
-      <form className='login-form'>
+      <form className='login-form' onSubmit={props.handlesubmit}>
         <label>Enter Username</label>
-        <input name='username' type='text'></input>
+        <input name='user_name' type='text'></input>
         <label>Enter Password</label>
         <input name='password' type='password'></input>
         <button>Submit</button>

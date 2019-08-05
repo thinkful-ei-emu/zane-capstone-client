@@ -2,15 +2,24 @@ import React from 'react';
 import NavBar from './SignUpComponents/NavBar'
 import SignUpForm from './SignUpComponents/SignUpForm';
 import AuthApiService from '../services/auth-api-service'
+import {Redirect} from 'react-router';
 
 
 
 export default class Signup extends React.Component  {
 static defaultProps={
-  onRegistrationSuccess: ()=>{}
+  history:{
+    push:()=>{},
+  },
 }
 
-  state={error:null}
+handleRegistrationSuccess=user=>{
+  const{history}=this.props
+  history.push('/login')
+}
+
+  state={error:null,
+  redirect:false,}
  
  handleSubmit=e=>{
 
@@ -18,7 +27,8 @@ static defaultProps={
 
   const {user_name,password,user_email,first_name,last_name}=e.target;
 
-  this.setState({error:null})
+  this.setState({error:null,
+  redirect:false})
 
   AuthApiService.postUser({
     first_name:first_name.value,
@@ -32,7 +42,11 @@ static defaultProps={
     user_name.value=''
     password.value=''
     user_email.value=''
-    this.props.onRegistrationSuccess()
+    first_name.value=''
+    last_name.value=''
+    this.setState({
+      redirect:true
+    })
   })
 
   .catch(res=>{
@@ -52,6 +66,10 @@ static defaultProps={
  }
 
  render(){
+   const redirect=this.state.redirect;
+   if(redirect===true){
+     return <Redirect to='/login'/>
+   }
 
   return (
 
