@@ -13,7 +13,6 @@ export default function LandingPage(){
      <Header/>
      <SignUpSection/>
      <LoginSection/>
-     <MyInventorySection/>
      <LandingFooter/>
      
 

@@ -4,6 +4,8 @@ import LoginForm from './LoginPageComponents/LoginForm';
 import AuthApiServices from '../services/auth-api-service';
 import TokenServices from '../services/token-service';
 import {Redirect} from 'react-router'
+import{Link} from 'react-router-dom';
+
 
 
 
@@ -32,20 +34,22 @@ TokenServices.saveAuthToken(res.authToken)
 this.setState({redirect:true})
   })
   .catch(res=>{
-    console.log(res.error)
+    this.setState({error:res.error})
   })
 
 }
   render(){
-    const {redirect}=this.state
+    const {redirect,error}=this.state
     if(redirect===true){
-      return <Redirect to='/myinventory'/>
+      return <Redirect to='/inventory/1'/>
     }
 
   return(
     <div>
+      <p className='red'>{error}</p>
       <Header/>
       <LoginForm handlesubmit={this.handleSubmitJwtAuth}/>
+      <p>Not a Member yet? Sign Up <Link to='/signup'>Here</Link></p>
     </div>
 
   )

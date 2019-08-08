@@ -73,3 +73,13 @@ table{
 table, th, td{
   border:1px solid black;
 }
+.landing-page-header{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  background-image: linear-gradient(to right top, #2a6bcd, #0077ba, #007681, #006e40, #46600b);
+ 
+
+}

@@ -11,7 +11,7 @@ export default function LoginForm(props){
         <input name='user_name' type='text'></input>
         <label>Enter Password</label>
         <input name='password' type='password'></input>
-        <button>Submit</button>
+        <button type='submit'>Submit</button>
       </form>
     </section>
   )
