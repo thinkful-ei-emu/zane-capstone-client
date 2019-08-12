@@ -15,7 +15,7 @@ export default class UpdatePage extends React.Component{
     e.preventDefault();
     console.log('im running')
 
-    const { item_name, description, quantity, unit_type, price } = e.target;
+    const { item_name, description, quantity, unit_type, price,location } = e.target;
     const { match: { params } } = this.props;
     
     this.setState({ error: null, redirect: false });
@@ -27,7 +27,8 @@ export default class UpdatePage extends React.Component{
       description.value,
       quantity.value,
       unit_type.value,
-      price.value
+      price.value,
+      location.value,
     )
 
       .then(user => {
@@ -36,6 +37,7 @@ export default class UpdatePage extends React.Component{
         quantity.value = "";
         unit_type.value = "";
         price.value = "";
+        location.value="";
         this.setState({
           redirect: true
         })
@@ -70,8 +72,8 @@ const {item ,redirect}=this.state
       <div>
         
       <CreateFormHeader/>
-      <Item item_name={item.item_name} description={item.description} quantity={item.quantity} unit_type={item.unit_type} price={item.price}/>
-      <UpdateForm handleSubmit={this.handleSubmit} item_name={item.item_name} description={item.description} quantity={item.quantity} unit_type={item.unit_type} price={item.price}/>
+      <Item item_name={item.item_name} description={item.description} quantity={item.quantity} unit_type={item.unit_type} price={item.price}location={item.locationg}/>
+      <UpdateForm handleSubmit={this.handleSubmit} item_name={item.item_name} description={item.description} quantity={item.quantity} unit_type={item.unit_type} price={item.price} location={item.location}/>
 
 
       </div>

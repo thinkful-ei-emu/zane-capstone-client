@@ -18,6 +18,7 @@ state={
         <td>{this.props.quantity}</td>
         <td>{this.props.price}</td>
         <td>{this.props.unit_type}</td>
+        <td>{this.props.location}</td>
         <td><Link to={'/update/'+this.props.id}> <button>Update</button></Link><button onClick={()=>this.props.delete(this.props.id)}>Delete</button></td>
         </tr>
         </tbody>

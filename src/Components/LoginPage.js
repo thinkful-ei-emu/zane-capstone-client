@@ -46,9 +46,10 @@ this.setState({redirect:true})
 
   return(
     <div>
-      <p className='red'>{error}</p>
+      
       <Header/>
       <LoginForm handlesubmit={this.handleSubmitJwtAuth}/>
+      <p className='red'>{error}</p>
       <p>Not a Member yet? Sign Up <Link to='/signup'>Here</Link></p>
     </div>
 

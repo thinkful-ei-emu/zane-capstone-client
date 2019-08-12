@@ -18,7 +18,7 @@ const InventoryApiService={
 
   },
 
-  postItem(item_name,description,quantity,unit_type,price){
+  postItem(item_name,description,quantity,unit_type,price,location){
     console.log(TokenService.getAuthToken())
     return fetch(`${config.API_ENDPOINT}/inventory/`,{
       method:'POST',
@@ -32,7 +32,8 @@ const InventoryApiService={
         description,
         quantity,
         unit_type,
-        price
+        price,
+        location
         
       }),
     })
@@ -55,7 +56,7 @@ const InventoryApiService={
   //   .then(res=> console.log(res))
     
   // },
-  updateItem(id,item_name,description,quantity,unit_type,price){
+  updateItem(id,item_name,description,quantity,unit_type,price,location){
     console.log(TokenService.getAuthToken())
     return fetch(`${config.API_ENDPOINT}/inventory/${id}`,{
       method:'PUT',
@@ -69,7 +70,8 @@ const InventoryApiService={
         description,
         quantity,
         unit_type,
-        price
+        price,
+        location
         
       }),
     })

@@ -24,6 +24,8 @@ import React from 'react';
           </select> 
         <label>Price</label>
         <input name='price' type='number' defaultValue={props.price} required></input>
+        <label>Location</label>
+        <input name='location' type='text' defaultValue={props.location} required></input>
 
         <button type='submit'>Update</button>
         

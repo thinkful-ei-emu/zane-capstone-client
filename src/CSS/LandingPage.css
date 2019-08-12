@@ -1,3 +1,5 @@
+@import  url("https://fonts.googleapis.com/css?family=Wallpoet&display=swap");
+
 header{
   display:flex;
   flex-direction: row;
@@ -10,7 +12,7 @@ header{
 }
 
 section{
-  border-bottom:2px solid black;
+  border-bottom:3px solid black;
   height: 23vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +20,11 @@ section{
   align-items: center;  
 }
 .footersection{
-  height:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  height:200px;
   border-bottom:none;
 }
 
@@ -40,13 +46,19 @@ section{
   font-size:22px;
 
   }
+  .login-section{
+    background-color:aquamarine;
+  }
 
 
 .signup-section{
   border-bottom: none;
-  height: 80vh;
+  height: 30vh;
   margin-left:auto;
   margin-right:auto;
+  border-bottom:3px solid black;
+  background: rgb(255,175,0);
+background: linear-gradient(90deg, rgba(255,175,0,1) 0%, rgba(204,19,19,1) 46%, rgba(3,2,0,1) 100%);
 }
 
 .red{
@@ -76,10 +88,23 @@ table, th, td{
 .landing-page-header{
   display:flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content: space-around;
   color:white;
-  background-image: linear-gradient(to right top, #2a6bcd, #0077ba, #007681, #006e40, #46600b);
+  background: rgb(6,6,6);
+  background: linear-gradient(90deg, rgba(6,6,6,1) 1%, rgba(204,37,19,1) 46%, rgba(255,141,0,1) 100%);  
+  height:20vh;
+  border-bottom:black 3px solid;
  
 
+}
+
+.zap-logo{
+  font-family: 'Wallpoet', cursive;
+
+}
+.lpbg{
+  height:20vh;
+  border-bottom:black 3px solid;
+  
 }

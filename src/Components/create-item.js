@@ -10,7 +10,7 @@ export default class CreateForm extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    const { item_name, description, quantity, unit_type, price } = e.target;
+    const { item_name, description, quantity, unit_type, price,location } = e.target;
 
     this.setState({ error: null, redirect: false });
 
@@ -19,7 +19,8 @@ export default class CreateForm extends React.Component {
       description.value,
       quantity.value,
       unit_type.value,
-      price.value
+      price.value,
+      location.value
     )
 
       .then(user => {
@@ -28,6 +29,7 @@ export default class CreateForm extends React.Component {
         quantity.value = "";
         unit_type.value = "";
         price.value = "";
+        location.value="";
         this.setState({
           redirect: true
         })

@@ -23,6 +23,8 @@ import React from 'react';
           </select>
         <label>Price</label>
         <input name='price' type='number'required></input>
+        <label>Location</label>
+        <input type='text' name='location' required></input>
 
         <button type='submit'>Submit</button>
         

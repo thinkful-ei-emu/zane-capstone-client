@@ -8,9 +8,9 @@ export default function LoginForm(props){
     <section>
       <form className='login-form' onSubmit={props.handlesubmit}>
         <label>Enter Username</label>
-        <input name='user_name' type='text'></input>
+        <input name='user_name' type='text' required></input>
         <label>Enter Password</label>
-        <input name='password' type='password'></input>
+        <input name='password' type='password'required></input>
         <button type='submit'>Submit</button>
       </form>
     </section>
