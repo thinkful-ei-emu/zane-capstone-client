@@ -1,31 +1,45 @@
 @import  url("https://fonts.googleapis.com/css?family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow&dis");
+
+
+body{
+  color:white;
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 
 header{
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:25vh;
+  height:31vh;
   margin-bottom: 5px;
-  border-bottom:2px solid black;
+  border-bottom:2px #FFFFFF solid ;
   
 }
 
 section{
-  border-bottom:3px solid black;
-  height: 23vh;
+  border-bottom:3px solid #FFFFFF;
+  height: 31vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;  
+  background-color: #0B132B
+}
+.introsection{
+  background-color:#1C2541;
 }
 .footersection{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items:center;
-  height:200px;
-  border-bottom:none;
+  height:50px;
+  border-top:none;
+  background-color:#FFFFFF;
+  color:#5BC0BE;
 }
 
 .sign-up-form{
@@ -33,7 +47,7 @@ section{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border:3px black solid;
+  border:3px #5BC0BE  solid;
   width:90%;
   height:90%;
   border-radius: 13px;
@@ -47,24 +61,27 @@ section{
 
   }
   .login-section{
-    background-color:aquamarine;
+    background-color:#5BC0BE;
+    border-bottom:#3A506B solid 3px;
   }
 
 
 .signup-section{
   border-bottom: none;
-  height: 30vh;
+  height: 31vh;
   margin-left:auto;
   margin-right:auto;
-  border-bottom:3px solid black;
-  background: rgb(255,175,0);
-background: linear-gradient(90deg, rgba(255,175,0,1) 0%, rgba(204,19,19,1) 46%, rgba(3,2,0,1) 100%);
+  border-bottom:3px solid #FFFFFF;
+  background:#3A506B;
+
 }
 
 .red{
   color:red;
   font-weight: bold;
   font-size:18px;
+  background-color:#0B132B;
+  
 }
 
 .login-form{
@@ -79,11 +96,14 @@ background: linear-gradient(90deg, rgba(255,175,0,1) 0%, rgba(204,19,19,1) 46%, 
 
 table{
   border-collapse:collapse;
-  width: 100%;
+  width: 90%;
+
+  
+
 }
 
 table, th, td{
-  border:1px solid black;
+    border:2px solid #5BC0BE;
 }
 .landing-page-header{
   display:flex;
@@ -91,20 +111,78 @@ table, th, td{
   align-items:center;
   justify-content: space-around;
   color:white;
-  background: rgb(6,6,6);
-  background: linear-gradient(90deg, rgba(6,6,6,1) 1%, rgba(204,37,19,1) 46%, rgba(255,141,0,1) 100%);  
-  height:20vh;
-  border-bottom:black 3px solid;
+  background: rgb(11,19,43);
+background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rgba(91,192,190,1) 100%);
+ 
+  border-bottom:#FFFFFF solid 3px;
  
 
 }
 
 .zap-logo{
   font-family: 'Wallpoet', cursive;
+  font-size:30px;
 
 }
 .lpbg{
-  height:20vh;
-  border-bottom:black 3px solid;
+  height:31vh;
+  border-bottom: #FFFFFF solid 3px;
   
 }
+.zap-logo:hover{
+  
+  
+          transform: rotateZ(-30deg);
+          transform: rotateZ(-30deg);
+          transform: rotateZ(-30deg);
+          transition: all 1s;
+  }
+
+  .zapnav:hover{
+    transform: rotateZ(-30deg);
+          transform: rotateZ(-30deg);
+          transform: rotateZ(-30deg);
+          transition: all 1s;
+
+  }
+
+
+
+a{text-decoration:underline;
+color:#FFFFFF}
+@media only screen and (min-width:600px)
+{
+  .zap-logo{
+    font-size: 50px;
+  }
+  .its{
+    font-size:30px;
+  }
+  .introparagraph{
+    font-size:24px;
+    width:80%;
+  }
+  a{
+    font-size:30px;
+  }
+
+
+
+}
+
+@media only screen and (min-width:900px){
+
+  .zap-logo{
+    font-size: 60px;
+  }
+  .its{
+    font-size:36px;
+  }
+  .introparagraph{
+    font-size:30px;
+  }
+}
+
+
+
+

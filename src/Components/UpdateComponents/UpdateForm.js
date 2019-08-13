@@ -3,31 +3,31 @@ import React from 'react';
 
  export default function UpdateForm(props){
   return(
-    <section>
-      <h2>Edit Your Item</h2>
-      <form onSubmit={props.handleSubmit}>
+    <section className='signupformsection createformsection'role='main'>
+      <h2 className="headtwo">Edit Your Item</h2>
+      <form className='sign-up-form' onSubmit={props.handleSubmit}>
         <label>Item Name</label>
-        <input name='item_name' type='text' defaultValue={props.item_name} required></input>
+        <input name='item_name'aria-label='Item Name' type='text' defaultValue={props.item_name} required></input>
         <label>Description</label>
-        <input name='description' type='text' defaultValue={props.description} required></input>
+        <input name='description'aria-label='Item Description' type='text' defaultValue={props.description} required></input>
         <label>Quantity</label>
-        <input name='quantity' type='number'defaultValue={props.quantity} required></input>
+        <input name='quantity'aria-label='Item Quantity' type='number'defaultValue={props.quantity} required></input>
         <label>Unit Type</label>
-        <select name='unit_type' defaultValue={props.unit_type} >
-          <option value='pcs'>pcs</option>
-          <option value='lbs'>lbs</option>
-          <option value='ea'>ea</option>
-          <option value='cases'>cases</option>
-          <option value='oz'>oz</option>
-          <option value='ft.'>ft.</option>
-          <option value='gal.'>gal.</option>
+        <select name='unit_type'aria-label='Selector' defaultValue={props.unit_type} >
+          <option aria-label='pieces' value='pcs'>pcs</option>
+          <option aria-label='pounds' value='lbs'>lbs</option>
+          <option aria-label='each' value='ea'>ea</option>
+          <option aria-label='cases'value='cases'>cases</option>
+          <option aria-label='ounces' value='oz'>oz</option>
+          <option aria-label='feet' value='ft.'>ft.</option>
+          <option aria-label='gallons' value='gal.'>gal.</option>
           </select> 
         <label>Price</label>
-        <input name='price' type='number' defaultValue={props.price} required></input>
+        <input name='price'aria-label='Item Price' type='number' defaultValue={props.price} required></input>
         <label>Location</label>
-        <input name='location' type='text' defaultValue={props.location} required></input>
+        <input name='location'aria-label='Item Location' type='text' defaultValue={props.location} required></input>
 
-        <button type='submit'>Update</button>
+        <button type='submit'className='submitbutton'>Update</button>
         
       </form>
     </section>

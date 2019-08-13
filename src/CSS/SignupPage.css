@@ -1,0 +1,135 @@
+
+@import  url("https://fonts.googleapis.com/css?family=Wallpoet&display=swap");
+
+.nav-bar{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center; 
+  background: rgb(11,19,43);
+background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rgba(91,192,190,1) 100%);
+  height:20vh;
+  padding:5px;
+  border-bottom:#5BC0BE solid 3px;
+  padding:5px;
+  
+}
+
+.s-u-paragraph{
+  background-color: #0B132B;
+  font-size: 22px;
+}
+html{
+  margin:0;
+}
+
+.signupformsection{
+  height:80vh;
+  background-color:#1C2541; 
+  padding:8px;
+}
+
+.sign-up-form{
+  margin-top:15px;
+  background-color:#3A506B
+  
+}
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border:3px #5BC0BE  solid;
+  width:90%;
+  height:90%;
+  border-radius: 13px;
+}
+label{
+  font-size: 28px;
+}
+
+.submitbutton{
+  display:inline-block;
+  padding:0.7em 1.7em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight:400;
+  color:#1c2541;
+  background-color:#FFFFFF;
+  box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  text-align:center;
+  position:relative;
+  height:30px;
+  width:60px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+  }
+
+  .zapnav{
+    font-size:30px;
+    font-family: 'Wallpoet', cursive;
+  }
+
+  @media only screen and (min-width:600px)
+  {
+    .sign-up-form{
+      width:80%;
+
+    }
+
+    .zapnav{
+      font-size:50px;
+       
+      
+    }
+    .zapnav a {
+      text-decoration: none;
+    }
+    .s-u-paragraph{
+      font-size:36px;
+    }
+    .sign-up-form label{
+      font-size:34px;
+    
+    }
+    .sign-up-form input{
+      width:350px;
+      height:40px;
+      font-size:20px;
+    }
+
+    .submitbutton{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      height:50px;
+      width:150px;
+      font-size: 26px;
+      
+    }
+  }
+
+  @media only screen and (min-width:900px){
+    .sign-up-form{
+      width:60%;
+    }
+    
+    
+    .sign-up-form input{
+      width:500px;
+    }
+  }
+
+  
+
+
+  
+
+

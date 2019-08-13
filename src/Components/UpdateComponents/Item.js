@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Item(props){
   return(
-    <div>
+    <div className='inventory-items single-item'>
      <table>
        <tbody>
          <tr><th>Item Name</th>

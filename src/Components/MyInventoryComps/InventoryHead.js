@@ -14,9 +14,8 @@ export default class InventoryHead extends React.Component{
   return(
 
     <header className='inventory-head'>
-      <h1>ZAP</h1>
-      <h2>My Inventory</h2>
-      <button onClick={this.logout}>Logout</button>
+      <h1 className='zap-logo'>ZAP</h1>
+      <button className='submitbutton' onClick={this.logout}>Logout</button>
     </header>
   )
 }

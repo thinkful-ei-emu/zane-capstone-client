@@ -1,0 +1,33 @@
+.createformsection{
+  border-bottom:3px solid #5BC0BE;
+  margin-bottom: 0px;
+}
+.createformsection select{
+  width:173px;
+}
+h2{
+  font-size:18px;
+
+}
+@media only screen and (min-width:600px)
+{
+.createformsection select{
+  width:354px;
+  height:46px;
+}
+
+h2{
+  font-size:34px;
+}
+}
+
+@media only screen and (min-width:900px){
+  .createformsection select{
+    width:500px;
+    height:40px;
+  }
+
+  h2{
+    font-size:43px;
+  }
+}

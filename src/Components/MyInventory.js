@@ -6,7 +6,7 @@ import InvetoryApiServices from "../services/inventory-api-service";
 import InventoryApiService from "../services/inventory-api-service";
 import config from "../config";
 import TokenService from "../services/token-service";
-import { placeholder } from "@babel/types";
+import '../CSS/MyInventory.css'
 
 export default class MyInventory extends React.Component {
   state = {

@@ -1,10 +1,12 @@
 import React from 'react';
-import Header from './LandingPageComponents/Header ';
+
 import LoginForm from './LoginPageComponents/LoginForm';
 import AuthApiServices from '../services/auth-api-service';
 import TokenServices from '../services/token-service';
 import {Redirect} from 'react-router'
-import{Link} from 'react-router-dom';
+
+import '../CSS/LoginPage.css';
+import LoginNavBar from './LoginPageComponents/LoginHeader';
 
 
 
@@ -39,7 +41,7 @@ this.setState({redirect:true})
 
 }
   render(){
-    const {redirect,error}=this.state
+    const {redirect}=this.state
     if(redirect===true){
       return <Redirect to='/inventory/1'/>
     }
@@ -47,10 +49,9 @@ this.setState({redirect:true})
   return(
     <div>
       
-      <Header/>
-      <LoginForm handlesubmit={this.handleSubmitJwtAuth}/>
-      <p className='red'>{error}</p>
-      <p>Not a Member yet? Sign Up <Link to='/signup'>Here</Link></p>
+      <LoginNavBar/>
+      <LoginForm error={this.state.error}handlesubmit={this.handleSubmitJwtAuth}/>
+      
     </div>
 
   )

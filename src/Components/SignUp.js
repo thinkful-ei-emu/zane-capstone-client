@@ -3,6 +3,7 @@ import NavBar from './SignUpComponents/NavBar'
 import SignUpForm from './SignUpComponents/SignUpForm';
 import AuthApiService from '../services/auth-api-service'
 import {Redirect} from 'react-router';
+import '../CSS/SignupPage.css'
 
 
 
@@ -75,8 +76,8 @@ handleRegistrationSuccess=user=>{
 
 <div>
   <NavBar/>
-  <p className='red'>{this.state.error}</p>
-  <SignUpForm handleSubmit={this.handleSubmit.bind(this)}/>
+  <SignUpForm error={this.state.error} handleSubmit={this.handleSubmit.bind(this)}/>
+  
   </div>
     
   )

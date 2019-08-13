@@ -1,0 +1,50 @@
+.login-form-section{
+  background-color: #1C2541;
+  height:80vh;
+  padding-bottom: 4px;
+}
+.login-form{
+  border:3px solid #5BC0BE;
+  border-radius: 13px;
+  height:60%;
+  width: 90%; 
+}
+.login-form label{
+  margin:3px;
+  font-size:28px;
+}
+
+.login-form input{
+  margin:5px;
+  height:20px;
+  font-size:20px;
+}
+.memberparagraph{
+  background-color: #0B132B;
+  font-size: 22px;
+}
+@media only screen and (min-width:600px){
+  .login-form{
+    width:80%;
+  }
+  .login-form label{
+    font-size:36px;
+  }
+  .login-form input{
+    height:40px;
+    width:350px;
+  }
+  .memberparagraph{
+    font-size: 36px;
+  }
+  .herelink{
+    font-size: 36px;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width:900px){
+  .login-form {
+    width:40%;
+  }
+}
