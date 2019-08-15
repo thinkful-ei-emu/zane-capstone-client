@@ -13,6 +13,21 @@ h2{
   font-size:18px;
 
 }
+
+.logoutbuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
+
+.herelink{
+  text-decoration: none;
+}
+
+.inventorybutton{
+margin-left:auto;
+}
 @media only screen and (min-width:600px)
 {
 .createformsection select{

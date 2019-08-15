@@ -1,4 +1,4 @@
 export default {
-  API_ENDPOINT: 'http://localhost:8000/api',
+  API_ENDPOINT:'https://serene-sands-92168.herokuapp.com/api',
   TOKEN_KEY: 'zap-inv-key',
 }

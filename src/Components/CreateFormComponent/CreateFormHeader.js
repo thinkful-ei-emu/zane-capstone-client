@@ -20,9 +20,9 @@ export default class CreateFormHeader extends React.Component{
       return <Redirect to='/login'/>
     }
   return(
-  <header className='landing-page-header createformsection'>
+  <header className='landing-page-header createformsection logoutbuttons'>
     <h1 className='zapnav'>ZAP</h1>
-    <h2>Return to your <Link className='herelink' to='/inventory'>Inventory</Link></h2>
+    <Link className='herelink inventorybutton' to='/inventory'><button className='submitbutton inventorybutton'>Inventory</button></Link>
     <button className='submitbutton' onClick={this.logout}>Logout</button>
   </header>
   )
