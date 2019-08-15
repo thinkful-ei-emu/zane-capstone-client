@@ -6,6 +6,7 @@ body{
   color:white;
   margin: 0;
   font-family: 'PT Sans Narrow', sans-serif;
+  background-color:#1C2541;
 }
 
 header{
@@ -13,7 +14,7 @@ header{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:31vh;
+  height:21vh;
   margin-bottom: 5px;
   border-bottom:2px #FFFFFF solid ;
   
@@ -58,6 +59,9 @@ section{
 
 .sign-up-form label{
   font-size:22px;
+  margin-top:20px;
+  text-align: left;
+  width:500px;
 
   }
   .login-section{
@@ -144,6 +148,11 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
           transform: rotateZ(-30deg);
           transition: all 1s;
 
+  }
+
+  .loginlink:hover{
+    color:#1C2541;
+    
   }
 
 

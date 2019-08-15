@@ -32,7 +32,7 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   height: 40px;
   width: 80px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
@@ -41,8 +41,9 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: flex-start;
+  width: 90%;
+ 
 }
 
 .createitembutton {
@@ -61,13 +62,15 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
     inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
   text-align: center;
   position: relative;
-  height: 40px;
+  height: 50px;
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px;
+  font-size:15px;
+  font-weight: bold;
 }
 
 .cellbutton {
@@ -106,6 +109,8 @@ a:hover{
   
   color:#5bc0be;
   transition: all 1s;
+  color:gray;
+  transition:all 1s;
 }
 thead {
   width: 90%;
@@ -116,6 +121,14 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
   height:10vh;
+}
+
+.createbutton{
+ margin-left:auto;
+ display: flex;
+ flex-direction: column;
+ width:160px;
+ font-weight: bold;
 }
 
 @media only screen and (min-width:600px)
@@ -129,5 +142,26 @@ align-items: center;
   td{
     font-size:22px;
     overflow-wrap: break-word; 
+  }
+  .sortbuttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    
+  }
+}
+
+@media only screen and (min-width:900px){
+  .sortbuttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    
   }
 }

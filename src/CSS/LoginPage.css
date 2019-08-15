@@ -8,22 +8,37 @@
   border-radius: 13px;
   height:60%;
   width: 90%; 
+  background-color:#3A506B;
+
 }
 .login-form label{
   margin:3px;
   font-size:28px;
+  padding:5px;
+  text-align:left;
 }
 
 .login-form input{
   margin:5px;
   height:20px;
   font-size:20px;
+ 
 }
 .memberparagraph{
-  background-color: #0B132B;
+  
   font-size: 22px;
 }
 @media only screen and (min-width:600px){
+  th{
+    background-color:#606060;
+  }
+  
+  td{
+    background-color: 	#F5F5F5;
+    color:#1c2541;
+  
+  }
+  
   .login-form{
     width:80%;
   }
@@ -47,4 +62,6 @@
   .login-form {
     width:40%;
   }
+  
 }
+

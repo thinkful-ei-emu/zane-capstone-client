@@ -12,9 +12,11 @@ export default function InventoryTable(props){
 
 return(
   <section className='inventory-items'role='main'>
-    <div className='sortbuttons'><button className='sortbutton' onClick={props.sortName}>{sort}A-Z</button>
+    <div className='sortbuttons'><button className='sortbutton' onClick={props.sortName}>{sort}Name</button>
     <button className='sortbutton' onClick={props.sortPrice}>{sort}Price</button>
-    <button className='sortbutton' onClick={props.sortLocation}>{sort}Location</button></div>
+    <button className='sortbutton' onClick={props.sortLocation}>{sort}Location</button>
+    <Link className='createbutton' to='/create-form'><button className='createbutton sortbutton'>Create Item</button></Link>
+    </div>
     <table >
       <tbody>
         
@@ -30,7 +32,7 @@ return(
        key={item.id} id={item.id}item_name={item.item_name} description={item.description} quantity={item.quantity} price={item.price} unit_type={item.unit_type} delete={props.delete} items={props.items} location={item.location}/>))}
     </table>
 
-   <Link to='/create-form'><button className='createitembutton'>Create New Item</button></Link>
+  
   </section>
 )
 }

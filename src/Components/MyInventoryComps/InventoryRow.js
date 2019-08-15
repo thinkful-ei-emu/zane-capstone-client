@@ -21,12 +21,12 @@ deletes=<FontAwesomeIcon icon={faTrashAlt}/>
   render(){
   return(
     <tbody><tr>
-        <td>{this.props.item_name}</td>
-        <td>{this.props.description}</td>
+        <td className='text'>{this.props.item_name}</td>
+        <td className='text'>{this.props.description}</td>
         <td>{this.props.quantity}</td>
-        <td>{this.props.unit_type}</td>
+        <td className='text'>{this.props.unit_type}</td>
         <td>{this.props.price}</td>
-        <td>{this.props.location}</td>
+        <td className='text'>{this.props.location}</td>
         <td className='updelete'><Link to={'/update/'+this.props.id}> <button aria-label='update button' className='cellbutton updates'>{this.updates}</button></Link><button aria-label='delete button' className='cellbutton deletes' onClick={()=>this.props.delete(this.props.id)}>{this.deletes}</button></td>
         </tr>
         </tbody>

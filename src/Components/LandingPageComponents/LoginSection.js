@@ -8,7 +8,7 @@ export default function LoginSection(){
   return (
 
     <section className='login-section'>
-      <Link to='/login'>Login</Link>
+      <Link classname='loginlink' to='/login'>Login</Link>
     </section>
   )
 }
