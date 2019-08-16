@@ -6,6 +6,10 @@ Zap allows users to make an account.After making the account the user can use th
 
 https://zap-app.zanekuehn.now.sh
 
+## Link to API Repository
+
+https://github.com/thinkful-ei-emu/zane-capstone-server
+
 ## Screenshots
 ![Alt text](./LandingPage.png?raw=true "Landing Page")
 This Landing Page Tells you a brief overview of what the app does and allows you to sign up, and log in.
