@@ -4,7 +4,7 @@ import TokenService from './token-service';
 
 const InventoryApiService={
   getInventory(){
-    console.log(TokenService.getAuthToken())
+    
     return fetch(`${config.API_ENDPOINT}/inventory/`,{
       headers:{
         "Authorization":`bearer ${TokenService.getAuthToken()}`
@@ -19,7 +19,7 @@ const InventoryApiService={
   },
 
   postItem(item_name,description,quantity,unit_type,price,location){
-    console.log(TokenService.getAuthToken())
+    
     return fetch(`${config.API_ENDPOINT}/inventory/`,{
       method:'POST',
       headers:{
@@ -57,7 +57,7 @@ const InventoryApiService={
     
   // },
   updateItem(id,item_name,description,quantity,unit_type,price,location){
-    console.log(TokenService.getAuthToken())
+    
     return fetch(`${config.API_ENDPOINT}/inventory/${id}`,{
       method:'PUT',
       headers:{

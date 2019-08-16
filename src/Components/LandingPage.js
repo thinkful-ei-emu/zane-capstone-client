@@ -6,7 +6,7 @@ import LoginSection from './LandingPageComponents/LoginSection';
 import '../CSS/LandingPage.css'
 import LandingFooter from './LandingFooter';
 import IntroSection from './LandingPageComponents/Intro-Section';
-import {BrowserRouter} from 'react-router-dom'
+
 
 
 export default function LandingPage(){

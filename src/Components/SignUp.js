@@ -55,12 +55,6 @@ handleRegistrationSuccess=user=>{
   })
 
 
-  console.log(user_name.value)
-  console.log(password.value)
-  console.log(user_email.value)
-  console.log(first_name.value)
-  console.log(last_name.value)
-  console.log(this.state.error)
 
 
 

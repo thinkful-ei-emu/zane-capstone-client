@@ -67,7 +67,7 @@ export default class MyInventory extends React.Component {
      sortedPrice=()=>{
        this.sortByPrice()
        this.setState({sorted:true})
-       console.log('I just Ran Sorted Price')
+       
 
      }
 
@@ -75,13 +75,13 @@ export default class MyInventory extends React.Component {
     InvetoryApiServices.getInventory().then(res =>
       this.setState({ dbitems: res })
     );
-    console.log(this.state.dbitems);
+    
   }
   componentWillUnmount() {}
 
   render() {
     const { dbitems } = this.state;
-    console.log(dbitems);
+    
     return (
       <div>
         <InventoryHead />

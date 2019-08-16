@@ -13,13 +13,13 @@ export default class UpdatePage extends React.Component{
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log('im running')
+    
 
     const { item_name, description, quantity, unit_type, price,location } = e.target;
     const { match: { params } } = this.props;
     
     this.setState({ error: null, redirect: false });
-    console.log(item_name.value)
+    
 
     InventoryApiService.updateItem(
       params.itemid,
