@@ -35,6 +35,7 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  font-size:16px;
 }
 .sortbuttons {
   margin-top: 10px;
@@ -129,6 +130,7 @@ align-items: center;
  flex-direction: column;
  width:160px;
  font-weight: bold;
+ font-size: 20px;
 }
 
 @media only screen and (min-width:600px)
