@@ -13,6 +13,15 @@ h2{
   font-size:18px;
 
 }
+.centerup{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: flex-start;
+  width:250px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 .logoutbuttons{
   display: flex;
@@ -30,6 +39,16 @@ margin-left:auto;
 }
 @media only screen and (min-width:600px)
 {
+
+  .centerup{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    width:650px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 .createformsection select{
   width:354px;
   height:46px;
@@ -54,6 +73,15 @@ h2{
 
 
 @media only screen and (min-width:900px){
+  .centerup{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+  }
   .createformsection select{
     width:500px;
     height:40px;

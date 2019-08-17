@@ -11,22 +11,22 @@ https://zap-app.zanekuehn.now.sh
 https://github.com/thinkful-ei-emu/zane-capstone-server
 
 ## Screenshots
-![Alt text](./LandingPage.png?raw=true "Landing Page")
+![Landing Page](./LandingPage.png?raw=true "Landing Page")
 This Landing Page Tells you a brief overview of what the app does and allows you to sign up, and log in.
 
-![Alt text](./SignUpPage.png?raw=true "Sign Up Page")
+![Sign Up Page ](./SignUpPage.png?raw=true "Sign Up Page")
 The Sign Up Page Allows The User to create an account they can log in with.
 
-![Alt text](./LoginPage.png?raw=true "Log In Page")
+![Log In Page](./LoginPage.png?raw=true "Log In Page")
 The Login Page allows the user to login with an account that they have created through the sign up page.
 
-![Alt text](./UserInventory.png?raw=true "User Inventory")
+![User Inventory](./UserInventory.png?raw=true "User Inventory")
 This Page shows each individual user their own inventory and no one elses.
 
-![Alt text](./CreateForm.png?raw=true "Creation Page")
+![Creation Page](./CreateForm.png?raw=true "Creation Page")
 This form allows users to add Items to their Inventory and view them in the inventory page.
 
-![Alt text](./UpdatePage.png?raw=true "Update Page")
+![Update Page](./UpdatePage.png?raw=true "Update Page")
 This Page allows you to update already created items in the inventory system.
 
 

@@ -21,9 +21,9 @@ export default class CreateFormHeader extends React.Component{
     }
   return(
   <header className='landing-page-header createformsection logoutbuttons'>
-    <h1 className='zapnav'>ZAP</h1>
+    <div className="centerup"><h1 className='zapnav'>ZAP</h1>
     <Link className='herelink inventorybutton' to='/inventory'><button className='submitbutton inventorybutton'>Inventory</button></Link>
-    <button className='submitbutton' onClick={this.logout}>Logout</button>
+    <button className='submitbutton' onClick={this.logout}>Logout</button></div>
   </header>
   )
 }

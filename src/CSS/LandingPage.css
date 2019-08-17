@@ -159,6 +159,10 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
 
 a{text-decoration:underline;
 color:#FFFFFF}
+
+section.introsection{
+  padding:10px;
+}
 @media only screen and (min-width:600px)
 {
   .zap-logo{
@@ -170,6 +174,7 @@ color:#FFFFFF}
   .introparagraph{
     font-size:24px;
     width:80%;
+    
   }
   a{
     font-size:30px;
