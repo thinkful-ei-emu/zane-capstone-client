@@ -1,6 +1,6 @@
 .inventory-head {
-  background: rgb(11,19,43);
-background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rgba(91,192,190,1) 100%);
+  background: rgb(11, 19, 43);
+  background: linear-gradient(90deg, rgba(11, 19, 43, 1) 0%, rgba(28, 37, 65, 1) 35%, rgba(91, 192, 190, 1) 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -9,10 +9,12 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
 }
 
 .inventory-items {
-  height: 80vh;
+  border-bottom:none;
+  min-height: 80vh;
   justify-content: flex-start;
   background-color: #1c2541;
 }
+
 .sortbutton {
   display: inline-block;
   padding: 0.7em 1.7em;
@@ -24,19 +26,18 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   font-weight: 400;
   color: #1c2541;
   background-color: #ffffff;
-  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
-    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
-    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
   text-align: center;
   position: relative;
-  height: 40px;
+  min-height: 40px;
   width: 80px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  font-size:16px;
+  font-size: 16px;
 }
+
 .sortbuttons {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -44,7 +45,6 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   flex-direction: row;
   justify-content: flex-start;
   width: 90%;
- 
 }
 
 .createitembutton {
@@ -58,19 +58,17 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   font-weight: 400;
   color: #1c2541;
   background-color: #ffffff;
-  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
-    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
-    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
   text-align: center;
   position: relative;
-  height: 50px;
+  min-height: 50px;
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  font-size:15px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -85,12 +83,10 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   font-weight: 400;
   color: #1c2541;
   background-color: #ffffff;
-  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
-    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
-    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
   text-align: center;
   position: relative;
-  height: 25px;
+  min-height: 25px;
   width: 80px;
   display: flex;
   flex-direction: column;
@@ -98,6 +94,7 @@ background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rg
   align-items: center;
   margin: 3px;
 }
+
 button:hover {
   color: #ffffff;
   background-color: #5bc0be;
@@ -105,45 +102,50 @@ button:hover {
   cursor: pointer;
 }
 
-a:hover{
-  
-  
-  color:#5bc0be;
+a:hover {
+  color: #5bc0be;
   transition: all 1s;
-  color:gray;
-  transition:all 1s;
+  color: gray;
+  transition: all 1s;
 }
+
 thead {
   width: 90%;
 }
-.single-item{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-  height:10vh;
+
+.single-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
 }
 
-.createbutton{
- margin-left:auto;
- display: flex;
- flex-direction: column;
- width:160px;
- font-weight: bold;
- font-size: 20px;
+.createbutton {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-@media only screen and (min-width:600px)
-{
+.arrow {
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media only screen and (min-width:600px) {
   .updelete {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  td{
-    font-size:22px;
-    overflow-wrap: break-word; 
+  td {
+    font-size: 22px;
+    overflow-wrap: break-word;
   }
   .sortbuttons {
     margin-top: 10px;
@@ -152,11 +154,10 @@ align-items: center;
     flex-direction: row;
     justify-content: flex-start;
     width: 90%;
-    
   }
 }
 
-@media only screen and (min-width:900px){
+@media only screen and (min-width:900px) {
   .sortbuttons {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -164,6 +165,5 @@ align-items: center;
     flex-direction: row;
     justify-content: flex-start;
     width: 90%;
-    
   }
 }

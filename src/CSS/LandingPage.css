@@ -1,202 +1,181 @@
-@import  url("https://fonts.googleapis.com/css?family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Wallpoet&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow&dis");
-
-
-body{
-  color:white;
+body {
+  color: white;
   margin: 0;
   font-family: 'PT Sans Narrow', sans-serif;
-  background-color:#1C2541;
+  background-color: #1C2541;
 }
 
-header{
-  display:flex;
+header {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:21vh;
+  min-height: 21vh;
   margin-bottom: 5px;
-  border-bottom:2px #FFFFFF solid ;
-  
+  border-bottom: 2px #FFFFFF solid;
 }
 
-section{
-  border-bottom:3px solid #FFFFFF;
-  height: 31vh;
+section {
+  border-bottom: 3px solid #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   background-color: #0B132B
 }
-.introsection{
-  background-color:#1C2541;
+
+.introsection {
+  background-color: #1C2541;
 }
-.footersection{
+
+.footersection {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:center;
-  height:50px;
-  border-top:none;
-  background-color:#FFFFFF;
-  color:#5BC0BE;
+  align-items: center;
+  min-height: 50px;
+  border-top: none;
+  background-color: #FFFFFF;
+  color: #5BC0BE;
 }
 
-.sign-up-form{
+.sign-up-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border:3px #5BC0BE  solid;
-  width:90%;
-  height:90%;
-  border-radius: 13px;
-
-
-  
-}
-
-.sign-up-form label{
-  font-size:22px;
-  margin-top:20px;
-  text-align: left;
-  width:500px;
-
-  }
-  .login-section{
-    background-color:#5BC0BE;
-    border-bottom:#3A506B solid 3px;
-  }
-
-
-.signup-section{
-  border-bottom: none;
-  height: 31vh;
-  margin-left:auto;
-  margin-right:auto;
-  border-bottom:3px solid #FFFFFF;
-  background:#3A506B;
-
-}
-
-.red{
-  color:red;
-  font-weight: bold;
-  font-size:18px;
-  background-color:#0B132B;
-  
-}
-
-.login-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top:30px;
-  border:3px solid black;
-
-}
-
-table{
-  border-collapse:collapse;
+  border: 3px #5BC0BE solid;
   width: 90%;
-
-  
-
+  min-height: 90%;
+  border-radius: 13px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-table, th, td{
-    border:2px solid #5BC0BE;
+.sign-up-form label {
+  font-size: 22px;
+  margin-top: 20px;
+  text-align: left;
+  width: 500px;
 }
-.landing-page-header{
-  display:flex;
+
+.login-section {
+  background-color: #5BC0BE;
+  border-bottom: #3A506B solid 3px;
+}
+
+.signup-section {
+  border-bottom: none;
+  min-height: 35vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #FFFFFF;
+  background: #5BC0BE;
+  display: flex;
   flex-direction: row;
-  align-items:center;
+  justify-content: space-evenly;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #0B132B;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border: 3px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+table, th, td {
+  border: 2px solid #5BC0BE;
+}
+
+.landing-page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
-  color:white;
-  background: rgb(11,19,43);
-background: linear-gradient(90deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 35%, rgba(91,192,190,1) 100%);
- 
-  border-bottom:#FFFFFF solid 3px;
- 
-
-}
-
-.zap-logo{
-  font-family: 'Wallpoet', cursive;
-  font-size:30px;
-
-}
-.lpbg{
-  height:31vh;
+  color: white;
+  background: rgb(11, 19, 43);
+  background: linear-gradient(90deg, rgba(11, 19, 43, 1) 0%, rgba(28, 37, 65, 1) 35%, rgba(91, 192, 190, 1) 100%);
   border-bottom: #FFFFFF solid 3px;
-  
 }
-.zap-logo:hover{
-  
-  
-          transform: rotateZ(-30deg);
-          transform: rotateZ(-30deg);
-          transform: rotateZ(-30deg);
-          transition: all 1s;
-  }
 
-  .zapnav:hover{
-    transform: rotateZ(-30deg);
-          transform: rotateZ(-30deg);
-          transform: rotateZ(-30deg);
-          transition: all 1s;
-
-  }
-
-  .loginlink:hover{
-    color:#1C2541;
-    
-  }
-
-
-
-a{text-decoration:underline;
-color:#FFFFFF}
-
-section.introsection{
-  padding:10px;
+.zap-logo {
+  font-family: 'Wallpoet', cursive;
+  font-size: 30px;
 }
-@media only screen and (min-width:600px)
-{
-  .zap-logo{
+
+.lpbg {
+  min-height: 31vh;
+  border-bottom: #FFFFFF solid 3px;
+}
+
+.zap-logo:hover {
+  transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+  transition: all 1s;
+}
+
+.zapnav:hover {
+  transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+  transition: all 1s;
+}
+
+.loginlink:hover {
+  color: #1C2541;
+}
+
+a {
+  text-decoration: underline;
+  color: #FFFFFF
+}
+
+section.introsection {
+  padding: 10px;
+  min-height: 35vh;
+}
+
+@media only screen and (min-width:600px) {
+  .zap-logo {
     font-size: 50px;
   }
-  .its{
-    font-size:30px;
+  .its {
+    font-size: 30px;
   }
-  .introparagraph{
-    font-size:24px;
-    width:80%;
-    
+  .introparagraph {
+    font-size: 24px;
+    width: 80%;
   }
-  a{
-    font-size:30px;
+  a {
+    font-size: 30px;
   }
-
-
-
 }
 
-@media only screen and (min-width:900px){
-
-  .zap-logo{
+@media only screen and (min-width:900px) {
+  .zap-logo {
     font-size: 60px;
   }
-  .its{
-    font-size:36px;
+  .its {
+    font-size: 36px;
   }
-  .introparagraph{
-    font-size:30px;
+  .introparagraph {
+    font-size: 30px;
   }
 }
-
-
-
-

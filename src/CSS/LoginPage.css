@@ -1,67 +1,64 @@
-.login-form-section{
+.login-form-section {
   background-color: #1C2541;
-  height:80vh;
+  min-height: 80vh;
   padding-bottom: 4px;
 }
-.login-form{
-  border:3px solid #5BC0BE;
+
+.login-form {
+  border: 3px solid #5BC0BE;
   border-radius: 13px;
-  height:60%;
-  width: 90%; 
-  background-color:#3A506B;
-
-}
-.login-form label{
-  margin:3px;
-  font-size:28px;
-  padding:5px;
-  text-align:left;
+  min-height: 60%;
+  width: 90%;
+  background-color: #3A506B;
 }
 
-.login-form input{
-  margin:5px;
-  height:20px;
-  font-size:20px;
- 
+.login-form label {
+  margin: 3px;
+  font-size: 28px;
+  padding: 5px;
+  text-align: left;
 }
-.memberparagraph{
-  
+
+.login-form input {
+  margin: 5px;
+  min-height: 20px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.memberparagraph {
   font-size: 22px;
 }
-@media only screen and (min-width:600px){
-  th{
-    background-color:#606060;
+
+@media only screen and (min-width:600px) {
+  th {
+    background-color: #606060;
   }
-  
-  td{
-    background-color: 	#F5F5F5;
-    color:#1c2541;
-  
+  td {
+    background-color: #F5F5F5;
+    color: #1c2541;
   }
-  
-  .login-form{
-    width:80%;
+  .login-form {
+    width: 80%;
   }
-  .login-form label{
-    font-size:36px;
-  }
-  .login-form input{
-    height:40px;
-    width:350px;
-  }
-  .memberparagraph{
+  .login-form label {
     font-size: 36px;
   }
-  .herelink{
+  .login-form input {
+    min-height: 40px;
+    width: 350px;
+  }
+  .memberparagraph {
+    font-size: 36px;
+  }
+  .herelink {
     font-size: 36px;
     text-decoration: underline;
   }
 }
 
-@media only screen and (min-width:900px){
+@media only screen and (min-width:900px) {
   .login-form {
-    width:40%;
+    width: 40%;
   }
-  
 }
-

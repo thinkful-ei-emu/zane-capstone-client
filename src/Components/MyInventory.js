@@ -6,14 +6,17 @@ import InvetoryApiServices from "../services/inventory-api-service";
 import InventoryApiService from "../services/inventory-api-service";
 import config from "../config";
 import TokenService from "../services/token-service";
-import '../CSS/MyInventory.css'
+import "../CSS/MyInventory.css";
 
 export default class MyInventory extends React.Component {
   state = {
     items,
     dbitems: [],
     deletes: InventoryApiService.deleteItem,
-    sorted: false
+    sorted: false,
+    up: null,
+    priceup: null,
+    nameup: null
   };
   deleteItem = id => {
     return fetch(`${config.API_ENDPOINT}/inventory/${id}`, {
@@ -29,7 +32,7 @@ export default class MyInventory extends React.Component {
     );
   };
 
-  sortByName = () => {
+  sortByNameD = () => {
     this.state.dbitems.sort(function(a, b) {
       const nameA = a.item_name.toUpperCase();
       const nameB = b.item_name.toUpperCase();
@@ -42,9 +45,24 @@ export default class MyInventory extends React.Component {
       }
       return comparison;
     });
-    this.setState({ sorted: true });
+    this.setState({ sorted: true, up: null, priceup: null, nameup: true });
   };
-  sortByLocation = () => {
+  sortByNameAsc = () => {
+    this.state.dbitems.sort(function(a, b) {
+      const nameA = a.item_name.toUpperCase();
+      const nameB = b.item_name.toUpperCase();
+
+      let comparison = 0;
+      if (nameA < nameB) {
+        comparison = 1;
+      } else if (nameA > nameB) {
+        comparison = -1;
+      }
+      return comparison;
+    });
+    this.setState({ sorted: false, up: null, priceup: null, nameup: false });
+  };
+  sortByLocationD = () => {
     this.state.dbitems.sort(function(a, b) {
       const nameA = a.location.toUpperCase();
       const nameB = b.location.toUpperCase();
@@ -57,41 +75,69 @@ export default class MyInventory extends React.Component {
       }
       return comparison;
     });
-    this.setState({ sorted: true });
+    this.setState({ sorted: true, up: true, priceup: null, nameup: null });
   };
 
-  sortByPrice=()=>{
+  sortByLocationAsc = () => {
     this.state.dbitems.sort(function(a, b) {
-      return a.price-b.price
-     })}
-     sortedPrice=()=>{
-       this.sortByPrice()
-       this.setState({sorted:true})
-       
+      const nameA = a.location.toUpperCase();
+      const nameB = b.location.toUpperCase();
 
-     }
+      let comparison = 0;
+      if (nameA < nameB) {
+        comparison = 1;
+      } else if (nameA > nameB) {
+        comparison = -1;
+      }
+      return comparison;
+    });
+    this.setState({ sorted: false, up: false, priceup: null, nameup: null });
+  };
+
+  sortByPrice = () => {
+    this.state.dbitems.sort(function(a, b) {
+      return a.price - b.price;
+    });
+  };
+  sortByPriceDes = () => {
+    this.state.dbitems.sort(function(a, b) {
+      return b.price - a.price;
+    });
+  };
+  sortedPriceA = () => {
+    this.sortByPrice();
+    this.setState({ sorted: true, priceup: true, up: null });
+  };
+
+  sortedPriceD = () => {
+    this.sortByPriceDes();
+    this.setState({ sorted: false, priceup: false, up: null });
+  };
 
   componentDidMount() {
     InvetoryApiServices.getInventory().then(res =>
       this.setState({ dbitems: res })
     );
-    
   }
   componentWillUnmount() {}
 
   render() {
     const { dbitems } = this.state;
-    
+
     return (
       <div>
         <InventoryHead />
         <InventoryItems
+          state={this.state}
           items={dbitems}
           delete={this.deleteItem}
           sortName={this.sortByName}
-          sortPrice={this.sortedPrice}
-          sortLocation={this.sortByLocation}
-
+          sortPriceA={this.sortedPriceA}
+          sortPriceD={this.sortedPriceD}
+          sortLocationA={this.sortByLocationAsc}
+          sortLocationD={this.sortByLocationD}
+          sortNameA={this.sortByNameAsc}
+          sortNameD={this.sortByNameD}
         />
       </div>
     );
