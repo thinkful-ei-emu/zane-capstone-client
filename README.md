@@ -31,7 +31,7 @@ This Page allows you to update already created items in the inventory system.
 
 
 ## Technology Used
-###Front-End
+### Front-End
 
 Html5
 
@@ -42,7 +42,7 @@ React
 CSS
 
 
-###Back-End
+### Back-End
 
 Node
 
