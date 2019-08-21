@@ -6,7 +6,7 @@ import LandingPage from "./Components/LandingPage";
 import SignUp from "./Components/SignUp";
 import LoginPage from "./Components/LoginPage";
 import MyInventory from "./Components/MyInventory";
-import CreateItem from "./Components/create-item";
+import CreateItem from "./Components/CreateItem";
 import UpatePage from "./Components/UpdatePage";
 import PrivateRoute from "./Utils/PrivateRoute";
 import PublicRoute from "./Utils/PublicRoute";

@@ -4,7 +4,7 @@ import { MemoryRouter } from "react-router-dom";
 import LoginNavBar from "./LoginPageComponents/LoginHeader";
 import LoginForm from "./LoginPageComponents/LoginForm";
 
-it("renders without crashing", () => {
+it("LoginNavBar on LoginPage renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <MemoryRouter>
@@ -15,7 +15,7 @@ it("renders without crashing", () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it("renders without crashing", () => {
+it("LoginForm on LoginPage renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <MemoryRouter>

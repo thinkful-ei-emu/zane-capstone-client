@@ -8,9 +8,9 @@ export default function NavBar() {
         <h1 className="zapnav">ZAP</h1>
       </Link>
       <p className="s-u-paragraph">
-        Already a member <Link className="herelink" to="/login">Sign In{" "}
-        
-          Here
+        Already a member{" "}
+        <Link className="herelink" to="/login">
+          Sign In Here
         </Link>
       </p>
     </nav>

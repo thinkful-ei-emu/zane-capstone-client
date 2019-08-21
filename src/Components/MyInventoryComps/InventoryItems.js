@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TableRow from "./InventoryRow";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSortAmountDownAlt } from "@fortawesome/free-solid-svg-icons";
 
-const sort = <FontAwesomeIcon icon={faSortAmountDownAlt} />;
+
+
 
 export default function InventoryTable(props) {
   return (
@@ -72,7 +71,11 @@ export default function InventoryTable(props) {
             >
               {props.state.up === true ? <p className="arrow">&uarr;</p> : ""}
               Location{" "}
-              {props.state.up === false ? <p className="arrow">&darr;</p> : ""}{" "}
+              {props.state.up === false ? (
+                <p className="arrow">&darr;</p>
+              ) : (
+                ""
+              )}{" "}
             </th>
             <th aria-label="Update and Delete">Update/Delete</th>
           </tr>

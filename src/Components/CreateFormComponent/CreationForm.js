@@ -4,6 +4,7 @@ import "../../CSS/createform.css";
 export default function CreationForm(props) {
   return (
     <section className="signupformsection createformsection" role="main">
+      <h2>Enter New Item Details</h2>
       <form className="sign-up-form" onSubmit={props.handleSubmit}>
         <label>Item Name</label>
         <input name="item_name" aria-label="Item Name" type="text" required />

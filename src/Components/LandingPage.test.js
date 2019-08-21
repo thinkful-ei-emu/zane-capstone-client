@@ -7,7 +7,7 @@ import LandingFooter from "./LandingFooter";
 import LoginSection from "./LandingPageComponents/LoginSection";
 import renderer from "react-test-renderer";
 
-it("renders without crashing", () => {
+it("IntroSection on Landing Page renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <MemoryRouter>
@@ -18,7 +18,7 @@ it("renders without crashing", () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it("renders without crashing", () => {
+it("Header on Landing Page renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <MemoryRouter>
@@ -28,17 +28,8 @@ it("renders without crashing", () => {
   );
   ReactDOM.unmountComponentAtNode(div);
 });
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(
-    <MemoryRouter>
-      <LoginSection />
-    </MemoryRouter>,
-    div
-  );
-  ReactDOM.unmountComponentAtNode(div);
-});
-it("renders without crashing", () => {
+
+it("Landing Footer on Landing Page renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <MemoryRouter>
@@ -47,10 +38,4 @@ it("renders without crashing", () => {
     div
   );
   ReactDOM.unmountComponentAtNode(div);
-});
-
-it("renders the UI as Expected", () => {
-  const tree = renderer;
-  tree.create(<LandingFooter />).toJSON();
-  expect(tree).toMatchSnapshot();
 });

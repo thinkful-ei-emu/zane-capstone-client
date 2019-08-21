@@ -2,7 +2,7 @@ import React from "react";
 import CreateFormHeader from "./CreateFormComponent/CreateFormHeader";
 import UpdateForm from "./UpdateComponents/UpdateForm";
 import InventoryApiService from "../services/inventory-api-service";
-import Item from "./UpdateComponents/Item";
+
 import { Redirect } from "react-router";
 
 export default class UpdatePage extends React.Component {
@@ -76,7 +76,7 @@ export default class UpdatePage extends React.Component {
     return (
       <div>
         <CreateFormHeader />
-        
+
         <UpdateForm
           handleSubmit={this.handleSubmit}
           item_name={item.item_name}
